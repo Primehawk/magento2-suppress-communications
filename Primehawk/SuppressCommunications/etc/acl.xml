@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+ * @author Tom Protogerakis <tom.protogerakis@gmail.com>
+ * @copyright 2022 Tom Protogerakis
+ * @package Primehawk_SuppressCommunications
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+   <acl>
+       <resources>
+           <resource id="Magento_Backend::admin">
+              <resource id="Primehawk_SuppressCommunications::config" title="Suppress Communications" sortOrder="1"  />
+           </resource>
+       </resources>
+   </acl>
+</config>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!--
+ * @author Tom Protogerakis <tom.protogerakis@gmail.com>
+ * @copyright 2022 Tom Protogerakis
+ * @package Primehawk_SuppressCommunications
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="primehawk" translate="label" sortOrder="10">
+            <label>Primehawk</label>
+        </tab>
+        <section id="suppressors" translate="label" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="0">
+            <class>separator-top</class>
+            <label>Suppress Communications</label>
+            <tab>primehawk</tab>
+            <resource>Primehawk_SuppressCommunications::config</resource>
+            <group id="customer" translate="label" sortOrder="20" showInDefault="1" showInWebsite="1">
+                <label>Customer</label>
+                <field id="is_enabled" translate="label comment" type="select" sortOrder="25" showInDefault="1"
+                       showInWebsite="1">
+                    <label>Suppress Customer Communications</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="new_account" translate="label comment" type="select" sortOrder="25" showInDefault="1"
+                       showInWebsite="1">
+                    <label>Account Creation Email</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="*/*/is_enabled">1</field>
+                    </depends>
+                </field>
+                <field id="password_reset_confirmation" translate="label comment" type="select" sortOrder="25"
+                       showInDefault="1" showInWebsite="1">
+                    <label>Password Reset Confirmation Email</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="*/*/is_enabled">1</field>
+                    </depends>
+                </field>
+                <field id="password_reminder" translate="label comment" type="select" sortOrder="25" showInDefault="1"
+                       showInWebsite="1">
+                    <label>Password Reminder Email</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="*/*/is_enabled">1</field>
+                    </depends>
+                </field>
+                <field id="credentials_changed" translate="label comment" type="select" sortOrder="25"
+                       showInDefault="1" showInWebsite="1">
+                    <label>Credentials Changed Email</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="*/*/is_enabled">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

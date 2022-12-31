@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+ * @author Tom Protogerakis <tom.protogerakis@gmail.com>
+ * @copyright 2022 Tom Protogerakis
+ * @package Primehawk_SuppressCommunications
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <suppressors>
+            <customer>
+                <is_enabled>0</is_enabled>
+            </customer>
+        </suppressors>
+    </default>
+</config>

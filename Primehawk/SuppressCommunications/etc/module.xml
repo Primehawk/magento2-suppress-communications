@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--
+ * @author Tom Protogerakis <tom.protogerakis@gmail.com>
+ * @copyright 2022 Tom Protogerakis
+ * @package Primehawk_SuppressCommunications
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Primehawk_SuppressCommunications" setup_version="1.0.0">
+    </module>
+</config>
